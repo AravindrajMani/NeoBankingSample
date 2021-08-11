@@ -1,0 +1,91 @@
+<!DOCTYPE html>  
+    <html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>LOGIN PAGE</title>
+<script src="./js/validate.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>  
+  body{  
+    font-family: Calibri, Helvetica, sans-serif;  
+      
+  }  
+  .content{
+      margin: 50px;
+      border: 2px solid rgb(248, 247, 247);
+      border-radius: 8px;
+      padding: 35px;
+      padding-top: 0px;
+      width: 450px;
+  
+  }
+  
+  .usermail{
+     width: 381px;
+     height: 20px;
+     border-bottom: 0.5px solid gray;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     padding-bottom: 2px;
+  } 
+  
+  .userpassword{
+      width: 381px;
+     height: 20px;
+     border-bottom: 0.5px solid gray;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     padding-bottom: 2px; 
+  }
+  .feedback{
+     height: 50px;
+     width: 381px;
+     border-bottom: 0.5px solid gray;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     padding-bottom: 2px;
+  }
+  input[type=text]:focus, input[type=password]:focus
+   {  
+    background-color: orange;  
+    outline: none;  
+  }  
+   div {  
+              padding: 10px 0;  
+           }  
+  .registerbtn {  
+    background-color: #07e00e;  
+    color: white;  
+    padding: 10px ; 
+    margin: 12px;  
+    border-radius: 4px;  
+    cursor: pointer; 
+    height: 15%; 
+    width: 30%;  
+    opacity: 0.9;  
+  }  
+  .registerbtn:hover {  
+    opacity: 1;  
+  } 
+  select{
+    width: 50px;
+  } 
+  </style>
+<body> 
+  
+  <h1>LOGOUT</h1>
+  <!-- <a href="/logout">logout</a> -->
+  <button class="registerbtn" onclick="logout()">logout</button>  
+  
+  
+</body>
+  
